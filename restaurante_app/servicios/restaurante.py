@@ -26,6 +26,7 @@ class Restaurante:
         return self._clientes.copy()
 
     #Busqueda de cliente de manera flexible permitiendo buscar por nombre, correo o ID ademas de crear una lista vacia para almacenar los resultados de la busqueda y recorrer la lista de clientes para verificar si el criterio de busqueda coincide con alguno de los atributos del cliente, si coincide se agrega a la lista de resultados y finalmente se retorna la lista de resultados.
+    
     def buscar_cliente(self, criterio: str):
         resultados = []
         for c in self._clientes:

@@ -2,6 +2,7 @@ from modelos.producto import Producto
 from modelos.cliente import Cliente
 from servicios.restaurante import Restaurante
 
+#Menu principal
 def mostrar_menu():
     print("\n" + "=" * 40)
     print("    RESTAURANTE RECETAS DE MI SIERRA")
@@ -17,6 +18,7 @@ def mostrar_menu():
     print("7. Salir")
     print("=" * 40)
 
+#Funciones para registrar, listar y buscar productos y clientes, incluyendo manejo de errores y validaciones de entrada.
 def registrar_producto(restaurante):
     try:
         nombre = input("Nombre del producto: ")
